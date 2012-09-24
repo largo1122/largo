@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="<?= $this->metaLanguage ?>" xml:lang="<?= $this->metaLanguage ?>">
+    <head>
+        <base href="http://tomek.local/cms/" />
+        <title><?= $this->breadcrumb()->getTitle('Strona główna') ?> - Test.pl</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="language" content="<?= $this->metaLanguage ?>" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Tomasz Racia" />
+        <meta name="robots" content="index,follow" />
+        <meta name="revisit-after" content="5 days" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <?= $this->breadcrumb()->render('Strona główna') ?><br />
+        <?php echo $this->layout()->content?><br />
+        <?= $this->translate('LANG_MENU_CONTACT') ?><br />
+        <a href="files/Penguins.jpg">link</a><br />
+        <img src="pictures/100x75/photos/Penguins.jpg" alt="" />
+    </body>
+</html>

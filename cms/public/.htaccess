@@ -1,0 +1,10 @@
+SetEnv APPLICATION_ENV development
+
+RewriteEngine On
+RewriteRule ^files/(.*)$ php/file.php?src=$1 [L]
+RewriteRule ^pictures/100x75/(.*)$ php/thumb.php?width=100&height=75&src=$1 [L]
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php [NC,L]

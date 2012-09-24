@@ -1,0 +1,5 @@
+
+RewriteEngine on
+
+RewriteRule ^cms/(.*)$ cms/public/$1 [L]
+RewriteRule ^(.*)$ public/$1 [L]
