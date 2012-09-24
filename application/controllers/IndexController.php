@@ -21,6 +21,7 @@ class IndexController extends Cms_Controller_ActionAbstract
 
     public function languageAction()
     {
+        // Added comment
         $this->_helper->layout()->disableLayout();
 	$this->_helper->viewRenderer->setNoRender();
         $this->_session->language = $this->getRequest()->getParam('language');
